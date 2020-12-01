@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shoes</title>
+    <link href="reset.css">
+    <link href="normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        div {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            margin-top: 40px;
+        }
+
+
+        .logo {
+            float: left;
+            width: 62px;
+            height: 64px;
+        }
+
+        .menu {
+            float: left;
+            padding: 10px;
+            margin: 12px 0 0 51px;
+            font-family: "Roboto Light";
+        }
+
+        .brand {
+            margin-left: 10px;
+            float: left;
+            padding: 12px 0;
+        }
+
+        .menu li {
+            display: inline;
+            padding: 0 40px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+
+        .controls {
+            float: right;
+        }
+
+        .controls li {
+            display: inline;
+            padding: 20px;
+        }
+
+        .container2 {
+            margin: 40px 0;
+        }
+
+        .container2_1 {
+            height: 482px;
+            width: 793px;
+            background: url("img/container-1-png.jpg");
+            float: left;
+            font-family: Roboto;
+            color: white;
+            text-align: center;
+        }
+
+        .container2_1 h3 {
+            margin: 130px 0 300px;
+            left: 121px;
+            top: 257px;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 46px;
+            text-align: center;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .container2_1 p {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 131.7%;
+            margin-top: -279px;
+            margin-bottom: 50px;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .container2_2 {
+            float: right;
+        }
+
+        .container2_2_1 {
+            position: relative;
+            background: url("img/pexels-thalia-villa-4357439 1.jpg");
+            width: 387px;
+            height: 230px;
+        }
+
+        .gradient {
+            position: absolute;
+            top: 102px;
+            width: 387px;
+            height: 92px;
+            margin-top: 36px;
+            background: linear-gradient(180deg, rgba(18, 16, 16, 0) 0%, rgba(18, 16, 16, 0.1725) 6.79%, rgba(21, 19, 19, 0.25) 100%);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        .gradient p {
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 38px;
+        }
+
+        .container2_2_2 {
+            position: relative;
+            background: url("img/benjamin-rascoe-ItqFmSxKnIg-unsplash 1.jpg");
+            width: 387px;
+            height: 232px;
+            margin-top: 20px;
+        }
+
+        .container2_2_2 .gradient {
+            position: absolute;
+            top: 103px;
+            width: 387px;
+            height: 92px;
+            margin-top: 36px;
+            background: linear-gradient(180deg, rgba(18, 16, 16, 0) 0%, rgba(18, 16, 16, 0.1725) 6.79%, rgba(21, 19, 19, 0.25) 100%);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+
+        .container2_2_2 .gradient p {
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 30px;
+        }
+
+
+        .container3 ul {
+            float: left;
+            margin-left: -42px;
+            margin-top: 20px;
+        }
+
+        .container3 ul li {
+            font-family: Roboto;
+            display: inline;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 19px;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-right: 127px;
+            padding-left: 5px
+        }
+
+        .container3 .btn {
+            margin-right: 5px;
+        }
+
+
+        .container4 {
+            text-align: center;
+        }
+
+        .container4 h2 {
+            font-family: 'Playfair Display';
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 85px;
+        }
+
+        .container4 p {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .btn {
+            width: 215px;
+            height: 52px;
+            margin: auto;
+            background: #B39151;
+            text-align: center;
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 50px;
+        }
+
+        .containerMail .btn {
+            color: white; float: right; margin-right: 100px; margin-top: 50px;
+        }
+
+        .container5 {
+            margin: 100px 30px 0px;
+        }
+
+        .container5_1 {
+            float: left;
+            width: 285px;
+            height: 285px;
+            background: url("img/beckett-simonon-dunham-derby-pull-up-dark-brown-lifestyle-2 1.jpg");
+            background-size: 103% 100%;
+            background-position: bottom;
+        }
+
+        .container5_2 {
+            float: left;
+            width: 285px;
+            height: 285px;
+            background: url("img/beckett-simonon-types-of-shoes-oxfords 1.jpg");
+            background-size: 103% 100%;
+            background-position: bottom;;
+        }
+
+        .container5_3 {
+            float: left;
+            width: 285px;
+            height: 285px;
+            background: url("img/Top-5-Crockett-and-Jones-Monk-Shoes-Banner 1.jpg");
+            border-radius: 1px;
+            background-size: 103% 100%;
+            background-position: bottom;
+        }
+
+        .container5_4 {
+            float: left;
+            width: 285px;
+            height: 285px;
+            background: url("img/lifestyle-beckett-simonon-cohen-black-1_e8ae8d67-b606-41b0-842d-778178ed5b0a 1.jpg");
+            background-size: 103% 100%;
+            background-position: bottom;
+        }
+
+
+        .container5 p {
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 223px;
+        }
+
+
+        .container6 p {
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 30px;
+        }
+
+        .container6 h3 {
+            font-family: 'Playfair Display';
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            text-align: center;
+            margin: 100px 0 0 0;
+        }
+
+        .container7 {
+            margin-top: 50px;
+        }
+
+
+        .container7 div {
+            width: 285px;
+            height: 317px;
+            border: 1px solid #E3E3E3;
+            box-sizing: border-box;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        .container7 div {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .shoeImage1 {
+            width: 171px;
+            height: 171px;
+            background-repeat: no-repeat;
+            background: url("img/5de52d845565f8b6377fb90b32e73d64 1.jpg");
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin: auto;
+            background-size: 105% 110%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .shoeImage2 {
+            width: 171px;
+            height: 171px;
+            background-repeat: no-repeat;
+            background: url("img/03cd3c74535c92b3f6d8bb1fb622d911 1.jpg");
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin: auto;
+            background-size: 105% 110%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .shoeImage3 {
+            width: 171px;
+            height: 171px;
+            background-repeat: no-repeat;
+            background: url("img/berwick_303_dark_brown 4.jpg");
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin: auto;
+            background-size: 105% 110%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .shoeImage4 {
+            width: 171px;
+            height: 171px;
+            background-repeat: no-repeat;
+            background: url("img/berwick_5150_dark_brown_suede 1.jpg");
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin: auto;
+            background-size: 105% 110%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container7 p:nth-child(2) {
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 15px;
+            text-align: left;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-left: 25px;
+        }
+
+        .container7 p:nth-child(3) {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 15px;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-left: 25px;
+        }
+
+        .container7 p:nth-child(4) {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 15px;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-left: 25px;
+        }
+
+        .container7 p:nth-child(5) {
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 15px;
+            text-align: right;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-right: 20px;
+        }
+
+        .container8 {
+            margin-top: 100px;
+        }
+
+
+        .container8 p {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .container8 h2 {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 112.7%;
+            text-align: center;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .container8 div:first-child {
+            float: left;
+            margin-left: 150px;
+        }
+
+        .container8 div:nth-child(2) {
+            float: right;
+            width: 487px;
+            height: 339px;
+            background: url("img/rosie-fraser-IPcGLLgcABk-unsplash 1.jpg");
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        }
+
+        .mydiv {
+            float: left;
+            width: 489px;
+            height: 394px;
+            background: url("img/3999754 1.jpg");
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin: 0;
+            background-position: top;
+        }
+
+        .containerMail div:first-child {
+            width: 1199px;
+            height: 394px;
+            background: #4A443E;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .containerMail {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .containerMail p:nth-child(2) {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 50px;
+        }
+
+        .containerMail p:nth-child(3) {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .input {
+            float: left;
+        }
+
+        input {
+            height: 30px;
+            width: 250px;
+            background: rgba(0, 0, 0, 0);
+            outline: none;
+            border: none;
+            border-bottom: solid 2px white;
+            margin-left: 123px;
+            margin-top: 68px;
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 13px;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        input::placeholder {
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 13px;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .new {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            align-items: center;
+            text-align: center;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 100px
+        }
+
+        .aboutStyle {
+            display: flex;
+        }
+
+
+        .column {
+            float: left;
+            width: 390px;
+            margin-left: 10px;
+        }
+
+        .col1_1 {
+            display: flex;
+            flex-direction: row;
+            width: 384px;
+            height: 221px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            background: url("img/Group 3.jpg");
+            background-position: top;
+            background-size: 102% 104%;
+            margin-left: 4px;
+        }
+
+        .col1_2 {
+            display: flex;
+            margin-top: 15px;
+            width: 388px;
+            height: 472px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            background: url("img/Group 4.png");
+        }
+
+        .col2_1 {
+            display: flex;
+            flex-direction: column;
+            background: url("img/Group 5.png");
+            width: 388px;
+            height: 462px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        .col2_2 {
+            display: flex;
+            margin-top: 15px;
+            width: 388px;
+            height: 231px;
+            background: url("img/ivan-zhukevich-7ZC4qO3Gj6g-unsplash 1.jpg");
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            background-size: 103% 112%;
+            background-position: center;
+            margin-left: 2px;
+        }
+
+        .col3_1 {
+            display: flex;
+            width: 387px;
+            height: 221px;
+            background: url("img/jia-ye-erHlzWCN6zQ-unsplash 2.png");
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        .col3_2 {
+            display: flex;
+            margin-top: 15px;
+            width: 387px;
+            height: 472px;
+            left: 933px;
+            top: 3284px;
+            background: url("img/GettyImages-538772642 1.png");
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+
+        .aboutStyle p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 25px;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .aboutStyle p:last-child {
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 15px;
+            display: flex;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .flex {
+            align-self: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        footer {
+            margin-top: 100px;
+        }
+
+        footer div {
+            margin-left: 158px;
+        }
+
+        footer div.brand {
+            float: left;
+        }
+
+        footer li {
+            font-family: Roboto;
+            list-style-type: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 15px;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-bottom: 25px;
+        }
+
+        .footerBrands {
+            float: left;
+        }
+
+        .footerBuyers {
+            float: left;
+        }
+
+        .footerContacts {
+            float: left;
+        }
+
+        footer li:first-child {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 15px;
+            color: #0F0E0E;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-bottom: 30px;
+        }
+
+        @media all and (max-width: 1250px) {
+            .container {
+                width: 1000px;
+            }
+
+            .menu li {
+                padding: 0 30px;
+            }
+            .container2_1 {
+                width: 595px;
+            }
+            .container3 ul li {
+                padding-right: 90px;
+            }
+            .container5 div {
+                padding: 1px;
+                width: 230px;
+                height: 230px;
+            }
+            .container5 div:last-child {
+                width: auto;
+                height: auto;
+            }
+            .container5 p {
+                margin-top: 160px;
+            }
+            .container7 div {
+                width: 234px;
+                height: 310px
+            }
+            .container8 div:nth-child(2) {
+                width: 400px;
+                height: 310px
+            }
+            .containerMail div:first-child {
+                width: 1000px;
+            }
+            .mydiv {
+                width: 430px;
+            }
+
+            .containerMail .btn {
+                margin-right: 40px;
+            }
+
+            input {
+                margin-left: 30px;
+            }
+
+            .aboutStyle {
+                width: 1000px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img class="logo" src="img/Layer%209.png" alt="logo shoes" height="64" width="63">
+        <div class="brand" style="height: 64px;">
+            <span style="font-family: 'Playfair Display', serif;">PREMIUM</span> <br>
+            <span style="font-family: 'Roboto', sans-serif">Shoes</span>
+        </div>
+        <ul class="menu">
+            <li>Каталог</li>
+            <li>Акции</li>
+            <li>Аксессуары</li>
+            <li>Шузинг</li>
+        </ul>
+        <ul class="controls">
+            <li><img src="img/search.png" alt="search" width="27" height="27"></li>
+            <li><img src="img/user.png" alt="user" width="27" height="27"></li>
+            <li><img src="img/shopping-cart.png" alt="shopping cart" width="27" height="27"></li>
+        </ul>
+        <div style="clear: both">
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="container2">
+        <div class="container2_1">
+            <h3>Дерби + челси = ?</h3>
+            <p>При покупке 2-х пар обуви <br> держатели формы в подарок</p>
+            <div class="btn">Подробнее</div>
+        </div>
+        <div class="container2_2">
+            <div class="container2_2_1">
+                <div class="gradient">
+                    <p>Loake &mdash; дух Англии</p>
+                </div>
+            </div>
+            <div class="container2_2_2">
+                <div class="gradient">
+                    <p>Как подобрать обувь <br> к джинсам?</p>
+                </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <div class="container3">
+        <ul>
+            <li>Berwick</li>
+            <li>Loake</li>
+            <li>Michel</li>
+            <li>Swims</li>
+            <li style="padding-right: 0px">Herring</li>
+        </ul>
+        <div class="btn" style="float: right; color: white;">Все бренды</div>
+        <div style="clear:both"></div>
+    </div>
+    <div class="container4">
+        <h2>Классическая мужская обувь с именем</h2>
+        <p>Когда мы видим со вкусом одетого мужчину, на ум сразу приходит образ настоящего <br>
+            английского денди в строгом костюме, умело подобранном галстуке, а главное — <br>
+            в безукоризненно выглядящей обуви. </p>
+    </div>
+    <div class="container5">
+        <div class="container5_1">
+            <p>Дерби</p>
+        </div>
+        <div class="container5_2">
+            <p>Оксфорды</p>
+        </div>
+        <div class="container5_3">
+            <p>Монки</p>
+        </div>
+        <div class="container5_4">
+            <p>Лоферы</p>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    <div class="container6">
+        <h3>Самые популярные запросы этого месяца</h3>
+        <p>Прошли те времена, когда монки, оксфорды и лоферы были для мужчин непонятными словами, <br>ведь сегодня
+            практически каждый знает, что это различные вариации классической обуви.</p>
+    </div>
+    <div class="container7">
+        <div>
+            <p class="shoeImage1"></p>
+            <p>Parlament Oxfords</p>
+            <p>Пр-во: Англия</p>
+            <p>Цвет: Black</p>
+            <p>1026 руб.</p>
+        </div>
+        <div>
+            <p class="shoeImage2"></p>
+            <p>Loake Chester</p>
+            <p>Пр-во: Англия</p>
+            <p>Цвет: Brown</p>
+            <p>760 руб.</p>
+        </div>
+        <div>
+            <p class="shoeImage3"></p>
+            <p>Berwick 303</p>
+            <p>Пр-во: Англия</p>
+            <p>Цвет: Dark Brown</p>
+            <p>700 руб.</p>
+        </div>
+        <div>
+            <p class="shoeImage4"></p>
+            <p>Berwick 5150</p>
+            <p>Пр-во: Англия</p>
+            <p>Цвет: Dark Brown</p>
+            <p>508 руб.</p>
+        </div>
+        <h5 style="clear: both;"></h5>
+    </div>
+    <div class="container8">
+        <div>
+            <h2>Топ 10 осенних образов <br>с нашей обувью</h2>
+            <p>Гардероб однозначно начинается с пары хорошей<br> обуви. Иногда мы не знаем какой образ подобрать <br>под
+                те или
+                иные туфли или ботинки. Специально <br> для вас 10 стильных образов на эту осень.</p>
+        </div>
+        <div></div>
+        <div style="clear:both"></div>
+    </div>
+    <div class="containerMail">
+        <div style="padding: 1px">
+            <p class="mydiv"></p>
+            <p>Получите доступ к самым <br>выгодным предложениям</p>
+            <p>Подпишитесь на рассылку и узнавайте первым о новых <br> коллекциях, акциях и специальных предложениях.
+            </p>
+            <div class="input">
+                <input placeholder="Введите свой e-mail">
+            </div>
+            <div class="btn">Подписаться
+            </div>
+            <div style="clear: both"></div>
+        </div>
+
+    </div>
+    <h2 class="new">О стиле</h2>
+    <div class="aboutStyle">
+        <div class="column" style="margin-left: 5px;">
+            <div class="col1_1">
+                <div class="flex">
+                    <p>Глассаж: от А до Я</p>
+                    <p>Читать статью</p>
+                </div>
+            </div>
+            <div class="col1_2">
+                <div class="flex">
+                    <p>Итальянские бренды</p>
+                    <p>Смотреть подборку</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="col2_1">
+                <div class="flex">
+                    <p>TRICKER'S England</p>
+                    <p>Смотреть подборку</p>
+                </div>
+            </div>
+            <div class="col2_2">
+                <div class="flex">
+                    <p>Броги: да или нет</p>
+                    <p>Читать статью</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="col3_1">
+                <div class="flex">
+                    <p>Как подбирать <br> классическую обувь?</p>
+                    <p>Читать статью</p>
+                </div>
+            </div>
+            <div class="col3_2">
+                <div class="flex">
+                    <p>Формодержатели</p>
+                    <p>Читать статью</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img class="logo" src="img/Layer%209.png" alt="logo shoes" height="64" width="63">
+        <div class="brand" style="height: 64px">
+            <span style="font-family: 'Playfair Display', serif;">PREMIUM</span> <br>
+            <span style="font-family: 'Roboto', sans-serif">Shoes</span>
+            <div style="clear: both"></div>
+        </div>
+        <div class="footerBrands">
+            <ul>
+                <li>Бренды</li>
+                <li>Berwick</li>
+                <li>Loake</li>
+                <li>Michel</li>
+                <li>Swims</li>
+                <li>Herring</li>
+                <li>Alto Milano</li>
+                <li>Carmina</li>
+                <li>Tricker</li>
+            </ul>
+        </div>
+        <div class="footerBuyers">
+            <ul>
+                <LI>Покупателям</LI>
+                <LI>Акции</LI>
+                <LI>Доставка и оплата</LI>
+                <LI>Гарантия и возврат</LI>
+                <LI>Средства по уходу</LI>
+                <li>Шузинг</li>
+            </ul>
+        </div>
+        <div class="footerContacts">
+            <ul>
+                <li>Контакты</li>
+                <li>+375 (29) 337-12-38</li>
+                <li>+375 (29) 145-12-38</li>
+                <li>premiumsh@mail.ru</li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+    </footer>
+</div>
+
+</body>
+</html>

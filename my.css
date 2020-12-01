@@ -1,0 +1,80 @@
+div {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    border: 1px solid red;
+}
+
+
+.logo {
+    float: left;
+    width: 62px;
+    height: 64px;
+}
+
+.menu {
+    float: left;
+    padding: 10px;
+    margin: 12px 0 0 51px;
+    font-family: "Roboto Light";
+}
+
+.brand {
+    margin-left: 10px;
+    float: left;
+    padding: 12px 0;
+}
+
+.menu li {
+    display: inline;
+    padding: 0 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+.controls {
+    float: right;
+}
+
+.controls li {
+    display: inline;
+    padding: 20px;
+}
+
+.container2 {
+    margin: 40px 0;
+}
+
+.container2_1 {
+    height: 482px; width: 793px;
+    background: url("img/container-1-png.jpg");
+    float: left;
+}
+
+.container2_1 h3 {
+    width: 791px;
+    height: 52px;
+    left: 121px;
+    top: 257px
+}
+
+.container2_2 {
+    float: right;
+}
+.container2_2_1 {
+    background: url("img/pexels-thalia-villa-4357439 1.jpg");
+    width: 387px;
+    height: 230px;
+}
+.container2_2_2 {
+    background: url("img/benjamin-rascoe-ItqFmSxKnIg-unsplash 1.jpg");
+    width: 387px;
+    height: 232px;
+            }
