@@ -218,7 +218,10 @@
         }
 
         .containerMail .btn {
-            color: white; float: right; margin-right: 100px; margin-top: 50px;
+            color: white;
+            float: right;
+            margin-right: 100px;
+            margin-top: 50px;
         }
 
         .container5 {
@@ -437,7 +440,8 @@
             width: 487px;
             height: 339px;
             background: url("img/rosie-fraser-IPcGLLgcABk-unsplash 1.jpg");
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            background-position: top;
         }
 
         .mydiv {
@@ -532,6 +536,10 @@
             float: left;
             width: 390px;
             margin-left: 10px;
+        }
+
+        .aboutStyle .column:first-child {
+            margin-left: 5px;
         }
 
         .col1_1 {
@@ -677,35 +685,45 @@
             .menu li {
                 padding: 0 30px;
             }
+
             .container2_1 {
                 width: 595px;
             }
+
             .container3 ul li {
                 padding-right: 90px;
             }
+
             .container5 div {
                 padding: 1px;
                 width: 230px;
                 height: 230px;
             }
+
             .container5 div:last-child {
                 width: auto;
                 height: auto;
             }
+
             .container5 p {
                 margin-top: 160px;
             }
+
             .container7 div {
                 width: 234px;
                 height: 310px
             }
+
             .container8 div:nth-child(2) {
                 width: 400px;
                 height: 310px
+
             }
+
             .containerMail div:first-child {
                 width: 1000px;
             }
+
             .mydiv {
                 width: 430px;
             }
@@ -721,8 +739,179 @@
             .aboutStyle {
                 width: 1000px;
             }
+
+            [class*='col'] {
+                width: 326px;
+            }
+
+            .footer div {
+                margin-left: 105px;
+            }
         }
 
+        @media all and (max-width: 1050px) {
+            .container {
+                width: 860px;
+            }
+
+            .menu li {
+                padding: 0 15px;
+            }
+
+            .menu li:first-child, .menu li:last-child {
+                padding: 0;
+            }
+
+            .controls {
+                padding: 0;
+                margin-right: 15px;
+            }
+
+            .logo {
+                margin-left: 32px;
+            }
+
+            .container2_1 {
+                width: 793px;
+                padding-top: 20px;
+                margin: auto;
+                float: none;
+            }
+
+            .container2_2_1 {
+                float: left;
+                margin: 21px 36px 0 0;
+            }
+
+            .container2_2_2 {
+                float: right;
+                margin: 19px 33px 0px -16px;
+            }
+
+            .container2 {
+                padding: 1px;
+                float: none;
+            }
+
+            .container2_2_2 {
+                float: right;
+            }
+
+            .container3 ul li {
+                padding-right: 40px;
+            }
+
+            .container3 ul li:first-child {
+                margin-left: 30px;
+            }
+
+            .container3 .btn {
+                width: 180px;
+                margin-right: 34px;
+            }
+
+            .container5 {
+                margin: 50px 30px 0px;
+            }
+
+            .container5 p {
+                margin-top: 86px;
+                font-size: 25px;
+            }
+
+            .container5 div {
+                width: 190px;
+                height: 190px;
+            }
+
+            .container7 div {
+                width: 204px;
+                height: 330px;
+            }
+
+            .container7 p:nth-child(5) {
+                margin: 30px 10px 0 0;
+                font-size: 22px;
+            }
+
+            .container8 div:first-child {
+                margin-left: 30px;
+            }
+
+            .container8 div:nth-child(2) {
+                margin-left: 30px;
+                width: 370px;
+            }
+
+            .mydiv {
+                width: 361px;
+                height: 319px;
+            }
+
+            .containerMail div:first-child {
+                width: 860px;
+                height: 320px;
+            }
+
+            .containerMail p:nth-child(2) {
+                font-size: 30px;
+                margin-top: 20px;
+            }
+
+            input {
+                margin-top: 0px;
+                width: 200px
+            }
+
+            .input {
+                margin-top: 40px;
+            }
+
+            .containerMail .btn {
+                margin-right: 40px;
+                margin-top: 23px;
+            }
+
+            [class*='col'] {
+                width: 280px;
+            }
+
+            .col1_1 {
+                height: 160px;
+            }
+
+            .col1_2 {
+                height: 370px;
+            }
+
+            .col2_1 {
+                background-position: bottom;
+                height: 350px;
+            }
+
+            .col2_2 {
+                height: 180px;
+            }
+
+            .col3_1 {
+                height: 180px;
+                background-position: top;
+            }
+
+            .col3_2 {
+                height: 350px;
+            }
+
+            footer div {
+                margin-left: 68px;
+            }
+            footer .logo {
+                margin-left: 8px;
+            }
+            .aboutStyle {
+                width: 0px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -863,7 +1052,7 @@
     </div>
     <h2 class="new">О стиле</h2>
     <div class="aboutStyle">
-        <div class="column" style="margin-left: 5px;">
+        <div class="column">
             <div class="col1_1">
                 <div class="flex">
                     <p>Глассаж: от А до Я</p>
@@ -905,6 +1094,7 @@
                 </div>
             </div>
         </div>
+        <div style="clear: both"></div>
     </div>
     <footer>
         <img class="logo" src="img/Layer%209.png" alt="logo shoes" height="64" width="63">
