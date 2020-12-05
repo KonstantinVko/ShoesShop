@@ -212,7 +212,7 @@
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
 
-        .btn {
+        .btn, .btn-bot {
             width: 215px;
             height: 52px;
             margin: auto;
@@ -322,6 +322,14 @@
             margin-left: 10px;
         }
 
+        .container8-mobile-new {
+            display: none;
+        }
+
+        .formob8 {
+            display: none;
+        }
+
         .shoeImage1 {
             width: 171px;
             height: 171px;
@@ -412,12 +420,12 @@
             margin-right: 20px;
         }
 
-        .container8 {
+        .container8, .container8-mobile {
             margin-top: 100px;
         }
 
 
-        .container8 p {
+        .container8 p, .container8-mobile p {
             font-family: Roboto;
             font-weight: normal;
             font-size: 16px;
@@ -427,7 +435,7 @@
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
 
-        .container8 h2 {
+        .container8 h2, .container8-mobile h2 {
             font-family: "Playfair Display";
             font-weight: bold;
             font-size: 36px;
@@ -437,12 +445,12 @@
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
 
-        .container8 div:first-child {
+        .container8 div:first-child, .container8-mobile div:first-child {
             float: left;
             margin-left: 150px;
         }
 
-        .container8 div:nth-child(2) {
+        .container8 div:nth-child(2), .container8-mobile div:nth-child(2) {
             float: right;
             width: 487px;
             height: 339px;
@@ -635,6 +643,10 @@
             align-self: center;
             justify-content: center;
             margin: auto;
+        }
+
+        .btn-bot {
+            display: none;
         }
 
         footer {
@@ -1006,6 +1018,7 @@
 
             .container3-mobile {
                 display: block;
+
             }
 
             .container3-mobile h2 {
@@ -1022,18 +1035,191 @@
                 background: url("img/down-arrow 1.png");
 
             }
+
             .container3-mobile li {
                 display: inline;
             }
+
             .container3-mobile ul {
                 padding: 0;
-                margin: auto;
+                margin: -20px auto 0 auto;
+                width: 500px;
             }
+
             .logos {
                 width: 400px;
                 margin: auto;
+                cursor: pointer;
             }
 
+            .left-arrow {
+                width: 44px;
+                height: 44px;
+                background: url("img/down-arrow 1.png");
+                float: left;
+                background-size: cover;
+                cursor: pointer;
+                margin-top: 46px;
+
+            }
+
+            .right-arrow {
+                width: 44px;
+                height: 44px;
+                float: right;
+                background: url("img/down-arrow-2.png");
+                background-size: cover;
+                cursor: pointer;
+                margin-top: 46px;
+            }
+
+            .container5_2, .container5_4 {
+                float: right;
+            }
+
+            .container5 div {
+                width: 240px;
+                height: 240px;
+            }
+
+            .container8 {
+                display: none;
+            }
+
+            .container8-mobile-new {
+                display: block;
+            }
+
+            .container8-mobile-new div:first-child {
+                width: 540px;
+                height: 330px;
+                background: url("img/rosie-fraser-IPcGLLgcABk-unsplash 1.jpg");
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                background-position: top;
+                background-size: 110% 110%;
+                margin: auto;
+            }
+
+            .formob8 {
+                display: block;
+                font-family: 'Playfair Display';
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 48px;
+                text-align: center;
+                margin: 100px 0 30px 0;
+            }
+
+            .container8-mobile-new h3 {
+                font-family: Roboto;
+                font-size: 20px;
+                line-height: 30px;
+                text-align: center;
+                color: #0F0E0E;
+            }
+
+            .container8-mobile-new p {
+                font-family: Roboto;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                color: #0F0E0E;
+                margin: 0 30px 0;
+            }
+
+            .container8-mobile-new .btn {
+                color: white;
+                margin-top: 30px;
+            }
+
+            .container6 p {
+                display: none;
+            }
+
+            .container7 {
+                width: 1500px;
+                overflow-x: auto;
+            }
+
+            .container7 div {
+                width: 260px;
+                filter: none;
+                margin-left: 20px;
+            }
+
+            .container7 [class^='shoe'] {
+                filter: none;
+                background-position: top;
+            }
+
+            .containerMail {
+                display: none;
+            }
+
+            [class^='col1'] {
+                display: none;
+            }
+
+            [class^='col2'] {
+                display: none;
+            }
+
+            [class^='col3'] {
+                display: none;
+            }
+
+            .col2_1 {
+                display: block;
+                margin: 0px 87px 0;
+                width: 390px;
+            }
+
+            .flex {
+                justify-content: center;
+                margin: auto;
+                margin-top: 0px;
+                padding-top: 231px;
+                margin: 0 108px 0;
+            }
+
+            .btn-bot {
+                display: block;
+                color: #726040;
+                background: rgba(175, 152, 133, 0.60);
+                margin-top: 30px;
+                width: 400px;
+            }
+
+            footer {
+                margin-top: 50px;
+            }
+
+            .footerBrands {
+                display: none;
+            }
+
+            footer .brand, footer img {
+                display: none;
+            }
+
+            .footerBuyers, .footerContacts {
+                float: none;
+                margin: auto;
+                width: 190px;
+                text-align: center;
+            }
+
+            .footerContacts {
+                margin-top: 50px;
+            }
+
+            footer ul {
+                padding: 0;
+            }
+
+            p[text-shadow] {
+                text-shadow: none;
+            }
         }
     </style>
 </head>
@@ -1104,15 +1290,16 @@
     </div>
     <div class="container3-mobile">
         <h2>Наши бренды</h2>
-        <div class="down-arrow"></div>
+        <div class="left-arrow"></div>
+        <div class="right-arrow"></div>
         <div class="logos">
             <ul>
-                <li><img src="img/Berwick-shoes-logo%201.png" width="90" height="90" alt="berwick-shoes"></li>
-                <li><img src="img/loake-1880-logo-high-res-2012-cmyk%201.png" width="171" height="64"
+                <li><img src="img/Berwick-shoes-logo%201.png" width="150" height="150" alt="berwick-shoes"></li>
+                <li><img src="img/loake-1880-logo-high-res-2012-cmyk%201.png" width="220" height="100"
                          alt="loake1880 shoes"></li>
             </ul>
         </div>
-        <div class="down-arrow"></div>
+        <div style="clear: both"></div>
     </div>
     <div class="container4">
         <h2>Классическая мужская обувь с именем</h2>
@@ -1134,6 +1321,14 @@
             <p>Лоферы</p>
         </div>
         <div style="clear: both"></div>
+    </div>
+    <h2 class="formob8">Подборка месяца</h2>
+    <div class="container8-mobile-new">
+        <div></div>
+        <h3>Топ 10 образов с нашей обувью</h3>
+        <p>Гардероб однозначно начинается с пары хорошей обуви. Иногда мы не знаем какой образ подобрать под те или иные
+            туфли или ботинки. Специально для вас 10 стильных образов на эту осень.</p>
+        <div class="btn">Читать стаью</div>
     </div>
     <div class="container6">
         <h3>Самые популярные запросы этого месяца</h3>
@@ -1242,6 +1437,7 @@
         </div>
         <div style="clear: both"></div>
     </div>
+    <div class="btn-bot">Все статьи</div>
     <footer>
         <img class="logo" src="img/Layer%209.png" alt="logo shoes" height="64" width="63">
         <div class="brand" style="height: 64px">
