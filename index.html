@@ -14,6 +14,10 @@
             box-sizing: border-box;
         }
 
+        .mobile-header {
+            display: none;
+        }
+
         .container {
             width: 1200px;
             margin: 0 auto;
@@ -157,6 +161,9 @@
             margin-top: 30px;
         }
 
+        .container3-mobile {
+            display: none;
+        }
 
         .container3 ul {
             float: left;
@@ -905,17 +912,144 @@
             footer div {
                 margin-left: 68px;
             }
+
             footer .logo {
                 margin-left: 8px;
             }
+
             .aboutStyle {
                 width: 0px;
             }
+        }
+
+        @media all and (max-width: 880px) {
+            .container {
+                border: 2px solid black;
+                width: 600px;
+            }
+
+            .header {
+                display: none
+            }
+
+            .mobile-header {
+                display: block;
+                width: initial;
+                margin: 40px 15px 0px;
+                border-bottom: 1px solid #e5e5e5;
+                padding-bottom: 10px;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .controls li:first-child, .controls li:nth-child(2) {
+                display: none;
+            }
+
+            .brand {
+                display: none;
+            }
+
+            .logo {
+                float: none;
+                margin-left: 0;
+            }
+
+            .hamburger_menu {
+                float: left;
+                margin-top: 20px;
+            }
+
+            .controls {
+                float: right;
+            }
+
+            .hamburger_menu {
+                background: url("img/Group 6.png");
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+            }
+
+            .mobile-header-controls {
+                float: right;
+            }
+
+            .mobile-header-controls li {
+                display: inline;
+            }
+
+            .mobile-header-img {
+                width: 25px;
+                margin: auto;
+            }
+
+            .container2_2 {
+                display: none;
+            }
+
+            .container2_1 {
+                width: 567px;
+                height: 300px;
+                background-size: cover;
+            }
+
+            .container2_1 h3 {
+                margin: 20px 0 300px;
+            }
+
+            .container3 {
+                display: none;
+            }
+
+            .container3-mobile {
+                display: block;
+            }
+
+            .container3-mobile h2 {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 48px;
+                text-align: center;
+                color: #0F0E0E;
+            }
+
+            .down-arrow {
+                background: url("img/down-arrow 1.png");
+
+            }
+            .container3-mobile li {
+                display: inline;
+            }
+            .container3-mobile ul {
+                padding: 0;
+                margin: auto;
+            }
+            .logos {
+                width: 400px;
+                margin: auto;
+            }
+
         }
     </style>
 </head>
 <body>
 <div class="container">
+    <div class="mobile-header">
+        <div class="hamburger_menu"></div>
+        <div class="mobile-header-controls">
+            <ul>
+                <li><img src="img/shopping-cart.png" alt="shopping cart" width="27" height="27"></li>
+            </ul>
+        </div>
+        <div class="mobile-header-img"><img class="logo" src="img/Layer%209.png" alt="logo shoes" height="64"
+                                            width="63"></div>
+        <div style="clear: both"></div>
+    </div>
     <div class="header">
         <img class="logo" src="img/Layer%209.png" alt="logo shoes" height="64" width="63">
         <div class="brand" style="height: 64px;">
@@ -967,6 +1101,18 @@
         </ul>
         <div class="btn" style="float: right; color: white;">Все бренды</div>
         <div style="clear:both"></div>
+    </div>
+    <div class="container3-mobile">
+        <h2>Наши бренды</h2>
+        <div class="down-arrow"></div>
+        <div class="logos">
+            <ul>
+                <li><img src="img/Berwick-shoes-logo%201.png" width="90" height="90" alt="berwick-shoes"></li>
+                <li><img src="img/loake-1880-logo-high-res-2012-cmyk%201.png" width="171" height="64"
+                         alt="loake1880 shoes"></li>
+            </ul>
+        </div>
+        <div class="down-arrow"></div>
     </div>
     <div class="container4">
         <h2>Классическая мужская обувь с именем</h2>
